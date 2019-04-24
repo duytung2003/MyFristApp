@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <body>
-<nav></nav>
-<?php
-echo "My first PHP script!";
-?>
-
+	<nav>
+		<?php
+		echo "Name ngu";
+		?>
+	</nav>
 </body>
 
 </html>
