@@ -18,25 +18,7 @@
               <ul class="nav navbar-nav">
                   <li class="active"><a href="index.php">Home</a></li>
                   <li class="nav navbar-nav"><a href="product.php">All Product</a></li>
-                    <?php
-                      require_once('./dbconnector.php');
-                      $conn  = new DBConnect();
-                      $sql = "Select * from category";
-                      $row = $conn->runQuery($sql);
-                      for ($i=0; $i < count($row) ; $i++) { ?>
-                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $row[$i][1] ?><span class="caret"></span></a>
-                          <ul class="dropdown-menu">
-                            <?php 
-                            require_once('./dbconnector.php');
-                            $conn  = new DBConnect();
-                            $sql = "Select * from subcat where CatID=" .  $row[$i][0];
-                            $rows = $conn->runQuery($sql);
-                            for ($j=0; $j < count($rows) ; $j++) { ?>
-                              <li><a href="<?php echo $rows[$j][3] ?>" style="font-style: italic;"><?php echo $rows[$j][1] ?></a></li>
-                            <?php } ?>
-                          </ul>
-                        </li>
-                    <?php } ?>
+                    
               </ul>
     <ul class="nav navbar-nav navbar-right">
           <li><a href="#"><span class="glyphicon glyphicon-user"></span> Duy Tung</a></li>
