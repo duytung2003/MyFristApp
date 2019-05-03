@@ -179,7 +179,7 @@
       	<hr>
       	<div class="product">
 			 <?php
-          include 'db.php';
+          	include 'dbconnector.php';
           //get categories
             $querycategory = "SELECT proid, name FROM product";
             $total = pg_query($connection,$querycategory);
