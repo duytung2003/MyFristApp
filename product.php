@@ -185,10 +185,26 @@
             $total = pg_query($connection,$querycategory);
             if (pg_num_rows($total) > 0) {
             // output data of each row
-            while($rowcategory = pg_fetch_assoc($total)) {
-              $id_categorydb = $rowcategory['proid'];
-              $name_category = $rowcategory['proname'];
-          ?>
+            for ($i=0; $i < count($row) ; $i++) { ?>
+				<div class="ads1">
+					<div class="title">
+						<b><?php echo $row[$i][1] ?></b>
+					</div>
+					<br>
+					<div>
+						<a href="information.php?proId=<?php echo $row[$i][0] ?>"><img src="<?php echo $row[$i][2] ?>"></a>
+					</div>
+					<br>
+					<div class="descrip">
+						<?php echo $row[$i][3] ?>
+					</div>
+					<div class="price">
+						<?php echo $row[$i][4] ?>
+					</div>
+					<hr>
+				</div>
+			<?php } ?>
+
          <a href="information.php?proId=<?= $id_categorydb; ?>" class='collection-item <?php if($id_categorydb == $id_category) {echo"active";} ?>' ><?= $name_category; ?></a>
        <?php }} ?>
 		</div>
