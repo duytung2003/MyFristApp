@@ -178,16 +178,16 @@
     	<h2><small>ALL PRODUCT</small></h2>
       	<hr>
       	<div class="product">
-			<?php
-          	include 'db.php';
+			 <?php
+          include 'db.php';
           //get categories
-            $querycategory = "SELECT catid, name FROM category";
+            $querycategory = "SELECT proid, name FROM product";
             $total = pg_query($connection,$querycategory);
             if (pg_num_rows($total) > 0) {
             // output data of each row
             while($rowcategory = pg_fetch_assoc($total)) {
-              $id_categorydb = $rowcategory['catid'];
-              $name_category = $rowcategory['catname'];
+              $id_categorydb = $rowcategory['proid'];
+              $name_category = $rowcategory['proname'];
           ?>
          <a href="information.php?proId=<?= $id_categorydb; ?>" class='collection-item <?php if($id_categorydb == $id_category) {echo"active";} ?>' ><?= $name_category; ?></a>
        <?php }} ?>
