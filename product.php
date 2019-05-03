@@ -205,8 +205,8 @@
             if (pg_num_rows($total) > 0) {
             // output data of each row
             while($rowcategory = pg_fetch_assoc($total)) {
-              $id_categorydb = $rowcategory['id'];
-              $name_category = $rowcategory['name'];
+              $id_categorydb = $rowcategory['catid'];
+              $name_category = $rowcategory['catname'];
           	?>
           	<a href="information.php?proId=<?= $id_categorydb; ?>" class='collection-item <?php if($id_categorydb == $id_category) {echo"active";} ?>' ><?= $name_category; ?></a>
        <?php }} ?>
