@@ -115,25 +115,6 @@
 				    	<ul class="nav navbar-nav">
 				      		<li class="active"><a href="index.php">Home</a></li>
 				      		<li class="nav navbar-nav"><a href="product.php">All Product</a></li>
-				      			<?php
-				      				require_once('./dbconnector.php');
-				      				$conn  = new DBConnect();
-				      				$sql = "Select * from category";
-				      				$row = $conn->runQuery($sql);
-				      				for ($i=0; $i < count($row) ; $i++) { ?>
-				      					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $row[$i][1] ?><span class="caret"></span></a>
-				        					<ul class="dropdown-menu">
-				        						<?php 
-				        						require_once('./dbconnector.php');
-				      							$conn  = new DBConnect();
-				      							$sql = "Select * from subcat where CatID=" .  $row[$i][0];
-				      							$rows = $conn->runQuery($sql);
-				        						for ($j=0; $j < count($rows) ; $j++) { ?>
-				        							<li><a href="<?php echo $rows[$j][3] ?>" style="font-style: italic;"><?php echo $rows[$j][1] ?></a></li>
-				        						<?php } ?>
-				        					</ul>
-				      					</li>
-				      			<?php } ?>
 				    	</ul>
 		<ul class="nav navbar-nav navbar-right">
         	<li><a href="#"><span class="glyphicon glyphicon-user"></span> Duy Tung</a></li>
@@ -198,29 +179,18 @@
       	<hr>
       	<div class="product">
 			<?php
-			require_once('./dbconnector.php');
-			$conn = new DBConnect();
-			$sql = "select * from product";
-			$row = $conn->runQuery($sql);
-			for ($i=0; $i < count($row) ; $i++) { ?>
-				<div class="ads1">
-					<div class="title">
-						<b><?php echo $row[$i][1] ?></b>
-					</div>
-					<br>
-					<div>
-						<a href="information.php?proId=<?php echo $row[$i][0] ?>"><img src="<?php echo $row[$i][2] ?>"></a>
-					</div>
-					<br>
-					<div class="descrip">
-						<?php echo $row[$i][3] ?>
-					</div>
-					<div class="price">
-						<?php echo $row[$i][4] ?>
-					</div>
-					<hr>
-				</div>
-			<?php } ?>
+          include 'db.php';
+          //get categories
+            $querycategory = "SELECT catid, name FROM category";
+            $total = pg_query($connection,$querycategory);
+            if (pg_num_rows($total) > 0) {
+            // output data of each row
+            while($rowcategory = pg_fetch_assoc($total)) {
+              $id_categorydb = $rowcategory['catid'];
+              $name_category = $rowcategory['catname'];
+          ?>
+         <a href="information.php?proId=<?= $id_categorydb; ?>" class='collection-item <?php if($id_categorydb == $id_category) {echo"active";} ?>' ><?= $name_category; ?></a>
+       <?php }} ?>
 		</div>
         </div>
       </div>
