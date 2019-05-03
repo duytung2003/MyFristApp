@@ -181,7 +181,7 @@
 			 <?php
           	include 'dbconnector.php';
           //get categories
-            $querycategory = "SELECT proid, name FROM product";
+            $querycategory = "SELECT catid, name FROM category";
             $total = pg_query($connection,$querycategory);
             if (pg_num_rows($total) > 0) {
             // output data of each row
