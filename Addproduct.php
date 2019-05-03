@@ -126,7 +126,7 @@
 						  		<button class="glyphicon glyphicon-ok" type="submit" id="submit"> OK</button>
 				</form>
 							<br>
-							<button class="glyphicon glyphicon-triangle-left"><a href="administrator.php" style="text-decoration: none;color: black"> Back</a></button>
+							<button class="glyphicon glyphicon-triangle-left"><a href="Administrator.php" style="text-decoration: none;color: black"> Back</a></button>
 			</div>
         </div>
       </div>
