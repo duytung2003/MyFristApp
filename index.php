@@ -265,8 +265,7 @@
 
 <?php 
 $sql = "Select * from category";
-$db = parse_url(getenv("postgres://pgmlnflthhccbg:594f3a2cf7337f44b76dd7985224e7c7d9464c67a2aa44c19539cb3660feab4e@ec2-174-129-208-118.compute-1.amazonaws.com:5432/d6lidk4jftv962
-"));
+$db = parse_url(getenv("DATABASE_URL"));
 $pdo = new PDO("pgsql:" . sprintf(
     "host=%s;port=%s;user=%s;password=%s;dbname=%s",
     $db["host"],
