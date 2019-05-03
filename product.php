@@ -198,7 +198,15 @@
       	<hr>
       	<div class="product">
 			<?php
-			require_once('./dbconnector.php');
+			include 'dbconnector.php';
+			$querycategory = "SELECT catid, name FROM category";
+            $total = pg_query($connection,$querycategory);
+            if (pg_num_rows($total) > 0) {
+            // output data of each row
+            while($rowcategory = pg_fetch_assoc($total)) {
+              $id_categorydb = $rowcategory['id'];
+              $name_category = $rowcategory['name'];
+
 			$conn = new DBConnect();
 			$sql = "select * from product";
 			$row = $conn->runQuery($sql);
