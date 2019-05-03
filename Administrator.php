@@ -148,7 +148,7 @@
 				<img src="img/biluxury.png" style="height: 40px; width: 150px; margin: 5px;">
 				    </div>
 				    	<ul class="nav navbar-nav">
-				      		<li class="active"><a href="assignment 2.php">Home</a></li>
+				      		<li class="active"><a href="index.php">Home</a></li>
 				      		<li class="nav navbar-nav"><a href="product.php">All Product</a></li>
 				      			<?php
 				      				require_once('./dbconnector.php');
@@ -231,7 +231,7 @@
     	<div class="col-sm-9">
     		<h2><small>MANAGEMENT PRODUCT</small></h2>
       		<hr>
-      		<button><a href="addproduct.php"><span class="glyphicon glyphicon-plus"></span> Add Product</a></button>
+      		<button><a href="Addproduct.php"><span class="glyphicon glyphicon-plus"></span> Add Product</a></button>
 			<div class="product">
 			<?php
 			require_once('./dbconnector.php');
