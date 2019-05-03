@@ -133,7 +133,7 @@
 				      					<?php } ?>
 				    			</ul>
 				    			<ul class="nav navbar-nav navbar-right">
-				    				<li><a href="administrator.php"><span class="glyphicon glyphicon-cog"></span> Manage</a></li>
+				    				<li><a href="Administrator.php"><span class="glyphicon glyphicon-cog"></span> Manage</a></li>
         							<li><a href="#"><span class="glyphicon glyphicon-user"></span> Duy Tung</a></li>
         							<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Log out</a></li>
      							</ul>
