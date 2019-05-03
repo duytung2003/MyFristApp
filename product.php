@@ -185,7 +185,7 @@
             $total = pg_query($connection,$querycategory);
             if (pg_num_rows($total) > 0) {
             // output data of each row
-            while($rowcategory = pg_fetch_assoc($total)) { ?>
+            while($rowcategory = pg_fetch_assoc($total)) { 
               $id_categorydb = $rowcategory['proid'];
               $name_category = $rowcategory['proname'];
               $descrip_product = $rowcategory['descrip']
@@ -208,7 +208,7 @@
 				</div>
 
           ?>
-       <?php } ?>
+       <?php }} ?>
 		</div>
         </div>
       </div>
