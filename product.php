@@ -192,7 +192,7 @@
               $price_category = $rowcategory['price'];
               $image_category = $rowcategory['image'];
               ?>
-            <a href="category.php?id=<?= $id_categorydb; ?>" ><?= $name_category; ?></a>
+            <a href="information.php?proId=<?= $id_categorydb; ?>" ><?= $name_category; ?></a>
             <div class="ads1">
 					<div class="title">
 						<b><?= $name_category; ?></b>
