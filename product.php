@@ -181,16 +181,13 @@
 			 <?php
           	include 'dbconnector.php';
           //get categories
-            $querycategory = "SELECT * FROM product";
+            $querycategory = "SELECT * FROM category";
             $total = pg_query($connection,$querycategory);
             if (pg_num_rows($total) > 0) { 
             // output data of each row
             while($rowcategory = pg_fetch_assoc($total)) { 
-              $id_categorydb = $rowcategory['proid'];
-              $name_category = $rowcategory['proname'];
-              $descrip_category = $rowcategory['descrip'];
-              $price_category = $rowcategory['price'];
-              $image_category = $rowcategory['image'];
+              $id_categorydb = $rowcategory['catid'];
+              $name_category = $rowcategory['catname'];
               ?>
             <a href="information.php?proId=<?= $id_categorydb; ?>" ><?= $name_category; ?></a>
             <?php 
