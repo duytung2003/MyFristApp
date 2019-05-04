@@ -178,19 +178,6 @@
     	<h2><small>ALL PRODUCT</small></h2>
       	<hr>
       	<div class="product">
-			 <?php
-          	include 'dbconnector.php';
-          //get categories
-            $querycategory = "SELECT * FROM category";
-            $total = pg_query($connection,$querycategory);
-            if (pg_num_rows($total) > 0) { 
-            // output data of each row
-            while($rowcategory = pg_fetch_assoc($total)) { 
-              $id_categorydb = $rowcategory['catid'];
-              $name_category = $rowcategory['catname'];
-              ?>
-            <a href="information.php?proId=<?= $id_categorydb; ?>" ><?= $name_category; ?></a>
-            <?php }} ?>
             <?php 
             include 'dbconnector.php';
             $queryproduct = "SELECT *FROM product";
