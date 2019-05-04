@@ -191,7 +191,7 @@
               ?>
             <a href="information.php?proId=<?= $id_categorydb; ?>" ><?= $name_category; ?></a>
             <?php 
-            $queryproduct = "SELECT proid, proname, image, descrip, price FROM product WHERE id_categorydb = '{$id_categorydb}' ORDER BY proid;";
+            $queryproduct = "SELECT proid, proname, descrip, price, image FROM product WHERE id_categorydb = '{$id_categorydb}' ORDER BY proid;";
             $result = pg_query($connection,$queryproduct);
             if (pg_num_rows($result) > 0) {
             // output data of each row
