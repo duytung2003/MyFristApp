@@ -183,15 +183,12 @@
           //get categories
             $querycategory = "SELECT * FROM product";
             $total = pg_query($connection,$querycategory);
-            if (pg_num_rows($total) > 0) {
+            if (pg_num_rows($total) > 0) { 
             // output data of each row
-            while($rowcategory = pg_fetch_assoc($total)) { 
-              $id_categorydb = $rowcategory['proid'];
-              $name_category = $rowcategory['proname'];
-              $descrip_product = $rowcategory['descrip']
+            while($rowcategory = pg_fetch_assoc($total)) { ?>
               <div class="ads1">
 					<div class="title">
-						<b><?php echo $name_category ?></b>
+						<b><?php echo $rowcategory['proname'] ?></b>
 					</div>
 					<br>
 					<div>
@@ -199,16 +196,14 @@
 					</div>
 					<br>
 					<div class="descrip">
-						<?php echo $descrip_product ?>
+						<?php echo $rowcategory['descrip'] ?>
 					</div>
 					<div class="price">
-						<?php echo $row[$i][4] ?>
+						<?php echo $rowcategory['price'] ?>
 					</div>
 					<hr>
 				</div>
-
-          ?>
-       <?php }} ?>
+       <?php } ?>
 		</div>
         </div>
       </div>
