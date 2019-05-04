@@ -191,6 +191,8 @@
               ?>
             <a href="information.php?proId=<?= $id_categorydb; ?>" ><?= $name_category; ?></a>
             <?php }} ?>
+        </div>
+            <div class="ads1">
             <?php 
             include 'dbconnector.php';
             $queryproduct = "SELECT proid, proname, descrip, price, image FROM product WHERE id_categorydb = '{$id_categorydb}' ORDER BY proid;";
@@ -219,6 +221,7 @@
                       </div>
                   </div>
                 </div>
+            </div>
        		<?php }} ?>
 		</div>
         </div>
