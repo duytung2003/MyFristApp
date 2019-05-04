@@ -188,8 +188,6 @@
             while($rowcategory = pg_fetch_assoc($total)) { 
               $id_categorydb = $rowcategory['proid'];
               $name_category = $rowcategory['proname'];
-              $descrip_category = $rowcategory['descrip'];
-              
               ?>
        		<?php }} ?>
 		</div>
