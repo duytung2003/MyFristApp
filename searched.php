@@ -116,7 +116,11 @@
                       </div>
                   </div>
                 </div>
-                <?php }} ?>
+                <?php }} else {
+             	echo "<div class='container center-align'>
+                   <h4 class='black-text'>Item not found</h4>
+                   </div>";
+           		}?>
 			</div>
         </div>
       </div>
