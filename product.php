@@ -188,8 +188,27 @@
             while($rowcategory = pg_fetch_assoc($total)) { 
               $id_categorydb = $rowcategory['proid'];
               $name_category = $rowcategory['proname'];
+              $descrip_category = $rowcategory['descrip'];
+              $price_category = $rowcategory['price'];
               ?>
-            <a href="information.php?proId=<?= $id_categorydb; ?>" class='collection-item <?php if($id_categorydb == $id_category) {echo"active";} ?>' ><?= $name_category; ?></a>
+            <div class="ads1">
+					<div class="title">
+						<b><?php echo $rowcategory['proname'] ?></b>
+					</div>
+					<br>
+					<div>
+						<a href="information.php?proId=<?php echo $row[$i][0] ?>"><img src="<?php echo $row[$i][2] ?>"></a>
+					</div>
+					<br>
+					<div class="descrip">
+						<?php echo $rowcategory['descrip'] ?>
+					</div>
+					<div class="price">
+						<?php echo $rowcategory['price'] ?>
+					</div>
+					<hr>
+				</div>
+
        		<?php }} ?>
 		</div>
         </div>
