@@ -194,7 +194,7 @@
             <a href="category.php?id=<?= $id_categorydb; ?>" ><?= $name_category; ?></a>
             <div class="ads1">
 					<div class="title">
-						<b><?php echo $name_category ?></b>
+						<b><?php echo $name_category; ?></b>
 					</div>
 					<br>
 					<div>
@@ -202,10 +202,10 @@
 					</div>
 					<br>
 					<div class="descrip">
-						<?php echo $descrip_category ?>
+						<?php echo $descrip_category; ?>
 					</div>
 					<div class="price">
-						<?php echo $price_category ?>
+						<?php echo $price_category; ?>
 					</div>
 					<hr>
 				</div>
