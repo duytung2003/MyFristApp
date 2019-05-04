@@ -191,6 +191,7 @@
               $descrip_category = $rowcategory['descrip'];
               $price_category = $rowcategory['price'];
               ?>
+            <a href="category.php?id=<?= $id_categorydb; ?>" class='collection-item <?php if($id_categorydb == $id_category) {echo"active";} ?>' ><?= $name_category; ?></a>
             <div class="ads1">
 					<div class="title">
 						<b><?php echo $rowcategory['proname'] ?></b>
