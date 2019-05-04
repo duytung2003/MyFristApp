@@ -204,24 +204,21 @@
               $price_product = $rowproduct['price'];
               $image_product = $rowproduct['image'];
              ?>
-             <div class="ads1">
-					<div class="title">
-						<b><?=$name_product; ?></b>
-					</div>
-					<br>
-					<div>
-						<a href="information.php?proId=<?php echo $row[$i][0] ?>"><img src="<?php echo $image_product ?>"></a>
-					</div>
-					<br>
-					<div class="descrip">
-						<?= $descrip_product; ?>
-					</div>
-					<div class="price">
-						<?=$price_product; ?>
-					</div>
-					<hr>
-				</div>
-
+             <div class="col s12 m4">
+                  <div class="card hoverable animated slideInUp wow">
+                    <div class="card-image">
+                        <a href="product.php?id=<?= $id_product; ?>">
+                          <img src="products/<?= $image_product; ?>"><?= $image_product; ?></a>
+                        <span class="card-title grey-text"><?= $name_product; ?></span>
+                        <a href="product.php?id=<?= $id_product; ?>" class="btn-floating halfway-fab waves-effect waves-light right"><i class="material-icons">add</i></a>
+                      </div>
+                      <div class="card-action">
+                        <div class="container-fluid">
+                          <h5 class="white-text"><?= $price_product; ?> $</h5>
+                        </div>
+                      </div>
+                  </div>
+                </div>
                 <?php }} ?>
             </div>
 		</div>
