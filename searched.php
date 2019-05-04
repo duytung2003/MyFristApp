@@ -87,7 +87,7 @@
 			$page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
        		$perpage = isset($_GET['per-page']) && $_GET['per-page'] <= 16 ? (int)$_GET['per-page'] : 16;
        		$start = ($page > 1) ? ($page * $perpage) - $perpage : 0;
-       		$queryproduct = "SELECT * FROM product WHERE proname LIKE '%{$word}%' ORDER BY id DESC LIMIT 5";
+       		$queryproduct = "SELECT * FROM product WHERE proname LIKE '%{$word}%' ORDER BY proid DESC LIMIT 5";
        		$result = pg_query($connection,$queryproduct);
        		$total = pg_fetch_assoc(pg_query($connection,"SELECT COUNT(*) as total"))['total'];
         	$pages = ceil($total / $perpage);
