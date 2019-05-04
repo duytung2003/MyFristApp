@@ -114,6 +114,7 @@
         </div>
       </div>
     </div>
+    </div>
     <div class="footer1">
       <nav class="navbar navbar-inverse" style="background-color: #6E6C6C" >
           <div class="container-fluid">
