@@ -210,7 +210,6 @@
 					</div>
 					<hr>
 				</div>
-
        		<?php }} ?>
 		</div>
         </div>
