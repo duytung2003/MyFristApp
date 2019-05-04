@@ -82,15 +82,35 @@
     		<h2><small>PRODUCT INFORMATION</small></h2>
       		<hr>
 			<div class="product">
-			
-			<?php
-			if (isset($_GET['proId'])) {
-				require_once('./dbconnector.php');
-				$conn = new DBConnect();
-				$sql = "select * from product where ProID=".$_GET['proId'];
-				$row = $conn->runQuery($sql);
-			} 
-			?>
+			<?php 
+            include 'dbconnector.php';
+            $queryproduct = "select * from product where ProID=".$_GET['proId'];
+            $result = pg_query($connection,$queryproduct);
+            if (pg_num_rows($result) > 0) {
+            // output data of each row
+            while($rowproduct = pg_fetch_assoc($result)) {
+              $id_product = $rowproduct['proid'];
+              $name_product = $rowproduct['proname'];
+              $descrip_product = $rowproduct['descrip'];
+              $price_product = $rowproduct['price'];
+              $image_product = $rowproduct['image'];
+             ?>
+             <div class="col s12 m4">
+                  <div class="card hoverable animated slideInUp wow">
+                    <div class="card-image">
+                        <a href="product.php?id=<?= $id_product; ?>">
+                          <img src="<?= $image_product; ?>"></a>
+                        <span class="card-title grey-text"><?= $name_product; ?></span>
+                        <a href="product.php?id=<?= $id_product; ?>" class="btn-floating halfway-fab waves-effect waves-light right"><i class="material-icons">add</i></a>
+                      </div>
+                      <div class="card-action">
+                        <div class="container-fluid">
+                          <h5 class="white-text"><?= $price_product; ?> $</h5>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <?php }} ?>
 			<?php
 			 foreach ($row as $r) { ?>
 				<div class="ads1">

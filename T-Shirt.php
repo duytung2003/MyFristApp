@@ -82,30 +82,35 @@
     	<h2><small>T-SHIRT</small></h2>
       	<hr>
       	<div class="product">
-			<?php
-			require_once('./dbconnector.php');
-			$conn = new DBConnect();
-			$sql = "select * from product where subcatID=2";
-			$row = $conn->runQuery($sql);
-			for ($i=0; $i < count($row) ; $i++) { ?>
-				<div class="ads1">
-						<div class="title">
-							<b><?php echo $row[$i][1] ?></b>
-						</div>
-						<br>
-						<div>
-							<a href="information.php?proId=<?php echo $row[$i][0] ?>"><img src="<?php echo $row[$i][2] ?>"></a>
-						</div>
-						<br>
-						<div class="descrip">
-							<?php echo $row[$i][3] ?>
-						</div>
-						<div class="price">
-							<?php echo $row[$i][4] ?>
-						</div>
-						<hr>
-					</div>
-				<?php } ?>
+      		<?php 
+            include 'dbconnector.php';
+            $queryproduct = "select * from product where subcatID=2";
+            $result = pg_query($connection,$queryproduct);
+            if (pg_num_rows($result) > 0) {
+            // output data of each row
+            while($rowproduct = pg_fetch_assoc($result)) {
+              $id_product = $rowproduct['proid'];
+              $name_product = $rowproduct['proname'];
+              $descrip_product = $rowproduct['descrip'];
+              $price_product = $rowproduct['price'];
+              $image_product = $rowproduct['image'];
+             ?>
+             <div class="col s12 m4">
+                  <div class="card hoverable animated slideInUp wow">
+                    <div class="card-image">
+                        <a href="product.php?id=<?= $id_product; ?>">
+                          <img src="<?= $image_product; ?>"></a>
+                        <span class="card-title grey-text"><?= $name_product; ?></span>
+                        <a href="product.php?id=<?= $id_product; ?>" class="btn-floating halfway-fab waves-effect waves-light right"><i class="material-icons">add</i></a>
+                      </div>
+                      <div class="card-action">
+                        <div class="container-fluid">
+                          <h5 class="white-text"><?= $price_product; ?> $</h5>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <?php }} ?>
 		</div>
         </div>
       </div>
