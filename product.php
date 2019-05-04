@@ -190,22 +190,23 @@
               $name_category = $rowcategory['proname'];
               $descrip_category = $rowcategory['descrip'];
               $price_category = $rowcategory['price'];
+              $image_category = $rowcategory['image'];
               ?>
             <a href="category.php?id=<?= $id_categorydb; ?>" ><?= $name_category; ?></a>
             <div class="ads1">
 					<div class="title">
-						<b><?php echo $name_category; ?></b>
+						<b><?= $name_category; ?></b>
 					</div>
 					<br>
 					<div>
-						<a href="information.php?proId=<?php echo $row[$i][0] ?>"><img src="<?php echo $row[$i][2] ?>"></a>
+						<a href="information.php?proId=<?= $id_categorydb; ?>"><img src="<?php echo $image_category ?>"></a>
 					</div>
 					<br>
 					<div class="descrip">
-						<?php echo $descrip_category; ?>
+						<?= $descrip_category; ?>
 					</div>
 					<div class="price">
-						<?php echo $price_category; ?>
+						<?= $price_category; ?>
 					</div>
 					<hr>
 				</div>
