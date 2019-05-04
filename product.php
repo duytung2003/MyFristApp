@@ -189,6 +189,8 @@
               $id_categorydb = $rowcategory['proid'];
               $name_category = $rowcategory['proname'];
               ?>
+            <a href="information.php?proId=<?= $id_categorydb; ?>" class='collection-item <?php if($id_categorydb == $id_category) {echo"active";} ?>' ><?= $name_category; ?></a>
+
        		<?php }} ?>
 		</div>
         </div>
