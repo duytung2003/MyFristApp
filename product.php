@@ -199,26 +199,26 @@
             if (pg_num_rows($result) > 0) {
             // output data of each row
             while($rowproduct = pg_fetch_assoc($result)) {
-              $id_categorydb = $rowcategory['proid'];
-              $name_category = $rowcategory['proname'];
-              $descrip_category = $rowcategory['descrip'];
-              $price_category = $rowcategory['price'];
-              $image_category = $rowcategory['image'];
+              $id_product = $rowproduct['proid'];
+              $name_product = $rowproduct['proname'];
+              $descrip_product = $rowproduct['descrip'];
+              $price_product = $rowproduct['price'];
+              $image_product = $rowproduct['image'];
              ?>
             <div class="ads1">
 					<div class="title">
-						<b><?= $name_category; ?></b>
+						<b><?= $name_product; ?></b>
 					</div>
 					<br>
 					<div>
-						<a href="information.php?proId=<?= $id_categorydb; ?>"><img src="<?php echo $image_category ?>"></a>
+						<a href="information.php?proId=<?= $id_categorydb; ?>"><img src="<?php echo $image_product ?>"></a>
 					</div>
 					<br>
 					<div class="descrip">
-						<?= $descrip_category; ?>
+						<?= $descrip_product; ?>
 					</div>
 					<div class="price">
-						<?= $price_category; ?>
+						<?= $price_product; ?>
 					</div>
 					<hr>
 				</div>
