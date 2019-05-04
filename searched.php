@@ -83,7 +83,6 @@
       		<hr>
 			<div class="product">
 			<?php
-			if (isset($_GET['keyword'])) {
 			include 'dbconnector.php';
 			$page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
        		$perpage = isset($_GET['per-page']) && $_GET['per-page'] <= 16 ? (int)$_GET['per-page'] : 16;
