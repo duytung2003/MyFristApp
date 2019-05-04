@@ -190,6 +190,7 @@
               $name_category = $rowcategory['catname'];
               ?>
             <a href="information.php?proId=<?= $id_categorydb; ?>" ><?= $name_category; ?></a>
+            <?php }} ?>
             <?php 
             $queryproduct = "SELECT proid, proname, descrip, price, image FROM product WHERE id_categorydb = '{$id_categorydb}' ORDER BY proid;";
             $result = pg_query($connection,$queryproduct);
