@@ -191,11 +191,9 @@
               ?>
             <a href="information.php?proId=<?= $id_categorydb; ?>" ><?= $name_category; ?></a>
             <?php }} ?>
-        </div>
-            <div class="ads1">
             <?php 
             include 'dbconnector.php';
-            $queryproduct = "SELECT proid, proname, descrip, price, image FROM product WHERE id_categorydb = '{$id_categorydb}' ORDER BY proid;";
+            $queryproduct = "SELECT *FROM product";
             $result = pg_query($connection,$queryproduct);
             if (pg_num_rows($result) > 0) {
             // output data of each row
@@ -221,12 +219,11 @@
                       </div>
                   </div>
                 </div>
+                <?php }} ?>
             </div>
-       		<?php }} ?>
 		</div>
         </div>
       </div>
-    </div>
 		<div class="footer1">
 			<nav class="navbar navbar-inverse" style="background-color: #6E6C6C" >
   				<div class="container-fluid">
