@@ -133,21 +133,21 @@
   <!-- Wrapper for slides -->
   			<div class="carousel-inner" role="listbox">
     			<div class="item active">
-    				<a href="product.php"><img src="img/Lx1.png" alt="New Toys"></a>
+    				<a href="product.php"><img src="img/Toy1.png" alt="New Toys"></a>
       					<div class="carousel-caption">
         					<h3>New Toys</h3>
         					<p>New arival</p>
       					</div>
     			</div>
     			<div class="item">
-      				<a href="product.php"><img src="img/Lx2.jpg" alt="Toys of the day"></a>
+      				<a href="product.php"><img src="img/Toy2.jpg" alt="Toys of the day"></a>
       					<div class="carousel-caption">
         					<h3>Toy of the day</h3>
         					<p>Fast and Furious</p>
       					</div>
     			</div>
     			<div class="item">
-      				<a href="product.php"><img src="img/Lx3.png" alt="Action"></a>
+      				<a href="product.php"><img src="img/Toy.png" alt="Action"></a>
       					<div class="carousel-caption">
         					<h3>Action</h3>
         					<p>Feel good with ours</p>
