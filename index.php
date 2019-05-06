@@ -191,22 +191,6 @@
 							array("images" =>"img/NB3.jpg","descrip" =>"8 quy tắc cài áo vest cho quý ông"),
 							array("images" =>"img/NB4.jpg","descrip" =>"4 phụ kiện cho những bộ vest chỉn chu"));
 			 ?>
-			 <?php for ($i=0; $i < count($NoiBat) ; $i++) { ?>
-					<div class="ads1">
-						<div>
-							<img src="<?php echo $NoiBat[$i]['images'] ?>">
-						</div>
-						<br>
-						<div class="descrip">
-							<?php echo $NoiBat[$i]['descrip'] ?>
-						</div>
-						<br>
-						<br>
-						<div class="link">
-							<button type="button" class="btn btn-primary btn-sm">Xem thêm</button>
-						</div>
-					</div>
-			<?php } ?>
 			<hr>
 		</div>
 		<div class="footer1">
