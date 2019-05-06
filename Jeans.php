@@ -79,7 +79,7 @@
       		</form>
     </div>
     <div class="col-sm-9">
-    	<h2><small>JEANS</small></h2>
+    	<h2><small>ĐỒ CHƠI NHẬP VAI</small></h2>
       	<hr>
       	<div class="product">
       		<?php 

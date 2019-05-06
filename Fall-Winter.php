@@ -79,7 +79,7 @@
       		</form>
     </div>
     <div class="col-sm-9">
-    	<h2><small>FALL-WINTER FAVORITE</small></h2>
+    	<h2><small>BỘ SƯU TẬP PHIM ẢNH</small></h2>
       	<hr>
       	<div class="product">
       		<?php 
