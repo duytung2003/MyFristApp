@@ -193,6 +193,7 @@
              ?>
              <div class="col s12 m4">
                   <div class="card hoverable animated slideInUp wow">
+                  	<div class="ads1">
                   	<div class="title">
 						<span class="card-title grey-text"><?= $name_product; ?></span><br>
 					</div>
@@ -209,6 +210,7 @@
 						<h5 class="white-text"><?= $price_product; ?> $</h5>
 					</div>
                       </div>
+                  </div>
                   </div>
                 </div>
                 <?php }} ?>
