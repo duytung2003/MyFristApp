@@ -200,13 +200,14 @@
                         <a href="product.php?id=<?= $id_product; ?>">
                           <img src="<?= $image_product; ?>"></a>
                           <br>
-                        <span class="card-title grey-text"><?= $name_product; ?></span><br>
-                        <i class="material-icons"><?= $descrip_product;?></i></a><br>
                       </div>
+                      <div class="descrip">
+						<i class="material-icons"><?= $descrip_product;?></i></a><br>>
+					</div>
                       <div class="card-action">
-                        <div class="container-fluid">
-                          <h5 class="white-text"><?= $price_product; ?> $</h5>
-                        </div>
+                      	<div class="price">
+						<h5 class="white-text"><?= $price_product; ?> $</h5>
+					</div>
                       </div>
                   </div>
                 </div>
