@@ -13,7 +13,7 @@
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<img src="img/biluxury.png" style="height: 40px; width: 150px; margin: 5px;">
+				<img src="img/ATN.png" style="height: 40px; width: 150px; margin: 5px;">
 				    </div>
 				    	<ul class="nav navbar-nav">
 				      		<li class="active"><a href="index.php">Home</a></li>
