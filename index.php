@@ -133,21 +133,21 @@
   <!-- Wrapper for slides -->
   			<div class="carousel-inner" role="listbox">
     			<div class="item active">
-    				<a href="product.php"><img src="img/Lx1.png" alt="Sky"></a>
+    				<a href="product.php"><img src="img/Lx1.png" alt="New Toys"></a>
       					<div class="carousel-caption">
         					<h3>Bi Sky</h3>
         					<p>Young style like blue sky</p>
       					</div>
     			</div>
     			<div class="item">
-      				<a href="product.php"><img src="img/Lx2.jpg" alt="Vest"></a>
+      				<a href="product.php"><img src="img/Lx2.jpg" alt="Toys of the day"></a>
       					<div class="carousel-caption">
         					<h3>Bi Vest</h3>
         					<p>Elegant for Gentlement</p>
       					</div>
     			</div>
     			<div class="item">
-      				<a href="product.php"><img src="img/Lx3.png" alt="Earth&Sky"></a>
+      				<a href="product.php"><img src="img/Lx3.png" alt="Action"></a>
       					<div class="carousel-caption">
         					<h3>Earth & Sky</h3>
         					<p>Feel good with ours</p>
