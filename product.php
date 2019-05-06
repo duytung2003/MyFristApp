@@ -193,6 +193,7 @@
              ?>
              <div class="col s12 m4">
                   <div class="card hoverable animated slideInUp wow">
+                  	<span class="card-title grey-text"><?= $name_product; ?></span><br>
                     <div class="card-image">
                         <a href="product.php?id=<?= $id_product; ?>">
                           <img src="<?= $image_product; ?>"></a>
