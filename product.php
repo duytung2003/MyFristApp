@@ -180,7 +180,7 @@
       	<div class="product">
             <?php 
             include 'dbconnector.php';
-            $queryproduct = "SELECT *FROM product";
+            $queryproduct = "SELECT *FROM products";
             $result = pg_query($connection,$queryproduct);
             if (pg_num_rows($result) > 0) {
             // output data of each row

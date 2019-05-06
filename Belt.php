@@ -84,7 +84,7 @@
       	<div class="product">
       		<?php 
             include 'dbconnector.php';
-            $queryproduct = "select * from product where subcatID=11";
+            $queryproduct = "select * from products where subcatID=11";
             $result = pg_query($connection,$queryproduct);
             if (pg_num_rows($result) > 0) {
             // output data of each row
@@ -97,16 +97,21 @@
              ?>
              <div class="col s12 m4">
                   <div class="card hoverable animated slideInUp wow">
+                  	<div class="title">
+						<span class="card-title grey-text"><?= $name_product; ?></span><br>
+					</div>
                     <div class="card-image">
                         <a href="product.php?id=<?= $id_product; ?>">
                           <img src="<?= $image_product; ?>"></a>
-                        <span class="card-title grey-text"><?= $name_product; ?></span>
-                        <a href="product.php?id=<?= $id_product; ?>" class="btn-floating halfway-fab waves-effect waves-light right"><i class="material-icons">add</i></a>
+                          <br>
                       </div>
+                      <div class="descrip">
+						<i class="material-icons"><?= $descrip_product;?></i></a><br>
+					</div>
                       <div class="card-action">
-                        <div class="container-fluid">
-                          <h5 class="white-text"><?= $price_product; ?> $</h5>
-                        </div>
+                      	<div class="price">
+						<h5 class="white-text"><?= $price_product; ?> $</h5>
+					</div>
                       </div>
                   </div>
                 </div>
