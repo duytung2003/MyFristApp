@@ -32,36 +32,36 @@
       <h4 align="center">BI Luxury Categories</h4>
       <div class="panel-group" id="accordion">
         <div class="panel panel-default">
-            <div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Clothes</a></h4></div>
+            <div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Đồ chơi vận động</a></h4></div>
               <div id="collapse1" class="panel-collapse collapse in">
-                <div class="panel-body"><a href="Shirt.php">Shirts</a></div>
-                <div class="panel-body"><a href="T-Shirt.php">T-Shirt</a></div>
-                <div class="panel-body"><a href="Vest.php">Vest</a></div>
-                <div class="panel-body"><a href="OverCoat.php">OverCoat</a></div>
+                <div class="panel-body"><a href="Shirt.php">Con quay</a></div>
+                <div class="panel-body"><a href="T-Shirt.php">Xe đạp</a></div>
+                <div class="panel-body"><a href="Vest.php">Đồ chơi dã ngoại</a></div>
+                <div class="panel-body"><a href="OverCoat.php">Đồ chơi dưới nước</a></div>
               </div>
           </div>
         <div class="panel panel-default">
-            <div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Pants</a></h4></div>
+            <div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Đồ chơi trí tuệ</a></h4></div>
               <div id="collapse2" class="panel-collapse collapse in">
-                <div class="panel-body"><a href="Jeans.php">Jeans</a></div>
-                <div class="panel-body"><a href="Trouser.php">Trouser</a></div>
-                <div class="panel-body"><a href="Short.php">Short</a></div>
+                <div class="panel-body"><a href="Jeans.php">Đồ chơi nhập vai</a></div>
+                <div class="panel-body"><a href="Trouser.php">Đồ chơi xếp hình</a></div>
+                <div class="panel-body"><a href="Short.php">Đồ chơi lắp ráp</a></div>
               </div>
           </div> 
         <div class="panel panel-default">
-            <div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Accessories</a></h4></div>
+            <div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Đồ chơi phương tiện</a></h4></div>
               <div id="collapse3" class="panel-collapse collapse in">
-                <div class="panel-body"><a href="Tie.php">Tie</a></div>
-                <div class="panel-body"><a href="SunGlasses.php">SunGlasses</a></div>
-                <div class="panel-body"><a href="Wallet.php">Wallet</a></div>
-                <div class="panel-body"><a href="Belt.php">Belt</a></div>
+                <div class="panel-body"><a href="Tie.php">Máy bay, điều khiển</a></div>
+                <div class="panel-body"><a href="SunGlasses.php">Xe mô hình</a></div>
+                <div class="panel-body"><a href="Wallet.php">Đường đua</a></div>
+                <div class="panel-body"><a href="Belt.php">Xe điều khiển</a></div>
               </div>
           </div>
         <div class="panel panel-default">
-            <div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Favorite</a></h4></div>
+            <div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Bộ sưu tập đồ chơi</a></h4></div>
               <div id="collapse4" class="panel-collapse collapse in">
-                <div class="panel-body"><a href="Spring-Summer.php">Spring-Summer</a></div>
-                <div class="panel-body"><a href="Fall-Winter.php">Fall-Winter</a></div>
+                <div class="panel-body"><a href="Spring-Summer.php">Bộ sưu tập siêu anh hùng</a></div>
+                <div class="panel-body"><a href="Fall-Winter.php">Bộ sưu tập phim ảnh</a></div>
               </div>
           </div>  
         </div>
