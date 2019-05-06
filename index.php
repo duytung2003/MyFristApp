@@ -147,7 +147,7 @@
       					</div>
     			</div>
     			<div class="item">
-      				<a href="product.php"><img src="img/Toy.png" alt="Action"></a>
+      				<a href="product.php"><img src="img/Toy3.png" alt="Action"></a>
       					<div class="carousel-caption">
         					<h3>Action</h3>
         					<p>Feel good with ours</p>
