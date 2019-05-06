@@ -172,12 +172,12 @@
 			<br>
 			<table align="center" cellspacing="5px;">
 				<tr>
-					<td style="padding: 15px;"><a href="T-Shirt.php"><img src="img/No1.jpg" width="600px" height="600px;" alt=""></a></td>
-					<td style="padding: 15px;"><a href="T-Shirt.php"><img src="img/No2.jpg" width="600px" height="600px;" alt=""></a></td>
+					<td style="padding: 15px;"><a href="T-Shirt.php"><img src="img/Nos1.jpg" width="600px" height="600px;" alt=""></a></td>
+					<td style="padding: 15px;"><a href="T-Shirt.php"><img src="img/Nos2.jpg" width="600px" height="600px;" alt=""></a></td>
 				</tr>
 				<tr>
-					<td style="padding: 15px;"><a href="Shirt.php"><img src="img/No3.jpg" width="600px" height="600px;" alt=""></a></td>
-					<td style="padding: 15px;"><a href="Trouser.php"><img src="img/No4.jpg" width="600px" height="600px;" alt=""></a></td>
+					<td style="padding: 15px;"><a href="Shirt.php"><img src="img/Nos3.jpg" width="600px" height="600px;" alt=""></a></td>
+					<td style="padding: 15px;"><a href="Trouser.php"><img src="img/Nos4.jpg" width="600px" height="600px;" alt=""></a></td>
 				</tr>
 			</table>
 			<hr>
