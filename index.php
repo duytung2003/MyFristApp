@@ -135,21 +135,21 @@
     			<div class="item active">
     				<a href="product.php"><img src="img/Lx1.png" alt="New Toys"></a>
       					<div class="carousel-caption">
-        					<h3>Bi Sky</h3>
-        					<p>Young style like blue sky</p>
+        					<h3>New Toys</h3>
+        					<p>New arival</p>
       					</div>
     			</div>
     			<div class="item">
       				<a href="product.php"><img src="img/Lx2.jpg" alt="Toys of the day"></a>
       					<div class="carousel-caption">
-        					<h3>Bi Vest</h3>
-        					<p>Elegant for Gentlement</p>
+        					<h3>Toy of the day</h3>
+        					<p>Fast and Furious</p>
       					</div>
     			</div>
     			<div class="item">
       				<a href="product.php"><img src="img/Lx3.png" alt="Action"></a>
       					<div class="carousel-caption">
-        					<h3>Earth & Sky</h3>
+        					<h3>Action</h3>
         					<p>Feel good with ours</p>
       					</div>
     			</div>
