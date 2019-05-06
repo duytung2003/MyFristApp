@@ -95,6 +95,23 @@
               $price_product = $rowproduct['price'];
               $image_product = $rowproduct['image'];
              ?>
+             <div class="ads1">
+					<div class="title">
+						<b><?= $name_product; ?></b>
+					</div>
+					<br>
+					<div>
+						<a href="product.php?id=<?= $id_product; ?>"><img src="<?= $image_product; ?>"></a>
+					</div>
+					<br>
+					<div class="descrip">
+						<?= $descrip_product; ?>
+					</div>
+					<div class="price">
+						<?= $price_product; ?>
+					</div>
+					<hr>
+				</div>
              <div class="col s12 m4">
                   <div class="card hoverable animated slideInUp wow">
                     <div class="card-image">
