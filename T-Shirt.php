@@ -29,7 +29,7 @@
 	<div class="container-fluid">
   	<div class="row content">
     <div class="col-sm-3 sidenav">
-      <h4 align="center">BI Luxury Categories</h4>
+      <h4 align="center">ATN TOYS Categories</h4>
 			<div class="panel-group" id="accordion">
     		<div class="panel panel-default">
       			<div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Đồ chơi vận động</a></h4></div>
