@@ -202,7 +202,7 @@
                           <br>
                       </div>
                       <div class="descrip">
-						<i class="material-icons"><?= $descrip_product;?></i></a><br>>
+						<i class="material-icons"><?= $descrip_product;?></i></a><br>
 					</div>
                       <div class="card-action">
                       	<div class="price">
