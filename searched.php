@@ -84,8 +84,10 @@
 			<div class="product">
 			<?php
 			include 'dbconnector.php';
+
+
     		$proname = $_GET['proname'];
-       		$queryproduct = "SELECT * FROM products WHERE proname LIKE '%{$word}%' ORDER BY proid DESC LIMIT 5";
+       		$queryproduct = "SELECT * FROM products WHERE proname LIKE '%{$proname}%' ORDER BY proid DESC LIMIT 5";
        		$result = pg_query($connection,$queryproduct);
         	if (pg_num_rows($result) > 0) {
             // output data of each row
