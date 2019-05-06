@@ -172,12 +172,12 @@
 			<br>
 			<table align="center" cellspacing="5px;">
 				<tr>
-					<td style="padding: 15px;"><a href="T-Shirt.php"><img src="img/New1.jpg" width="600px" height="600px;" alt=""></a></td>
-					<td style="padding: 15px;"><a href="T-Shirt.php"><img src="img/New2.jpg" width="600px" height="600px;" alt=""></a></td>
+					<td style="padding: 15px;"><a href="T-Shirt.php"><img src="img/No1.jpg" width="600px" height="600px;" alt=""></a></td>
+					<td style="padding: 15px;"><a href="T-Shirt.php"><img src="img/No2.jpg" width="600px" height="600px;" alt=""></a></td>
 				</tr>
 				<tr>
-					<td style="padding: 15px;"><a href="Shirt.php"><img src="img/New3.jpg" width="600px" height="600px;" alt=""></a></td>
-					<td style="padding: 15px;"><a href="Trouser.php"><img src="img/New4.jpg" width="600px" height="600px;" alt=""></a></td>
+					<td style="padding: 15px;"><a href="Shirt.php"><img src="img/No3.jpg" width="600px" height="600px;" alt=""></a></td>
+					<td style="padding: 15px;"><a href="Trouser.php"><img src="img/No4.jpg" width="600px" height="600px;" alt=""></a></td>
 				</tr>
 			</table>
 			<hr>
@@ -241,28 +241,5 @@
 			</div>
 		</div>
 	</div>
-
-<h1>My first PHP page</h1>
-
-<?php 
-$sql = "Select * from category";
-$db = parse_url(getenv("DATABASE_URL"));
-$pdo = new PDO("pgsql:" . sprintf(
-    "host=%s;port=%s;user=%s;password=%s;dbname=%s",
-    $db["host"],
-    $db["port"],
-    $db["user"],
-    $db["pass"],
-    ltrim($db["path"], "/")
-));
-$stmt = $pdo->prepare($sql);
-//Thiết lập kiểu dữ liệu trả về
-$stmt->setFetchMode(PDO::FETCH_ASSOC);
-$stmt->execute();
-$resultSet = $stmt->fetchAll();
-foreach ($resultSet as $row) {
-	echo $row['name'] . '\n';
-}
-?>
 </body>
 </html>
