@@ -198,7 +198,7 @@
                           <img src="<?= $image_product; ?>"></a>
                           <br>
                         <span class="card-title grey-text"><?= $name_product; ?></span><br>
-                        <a href="product.php?id=<?= $id_product; ?>" class="btn-floating halfway-fab waves-effect waves-light right"><i class="material-icons"><?= $descrip_product;?></i></a><br>
+                        <i class="material-icons"><?= $descrip_product;?></i></a><br>
                       </div>
                       <div class="card-action">
                         <div class="container-fluid">
