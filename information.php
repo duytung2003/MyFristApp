@@ -84,7 +84,7 @@
 			<div class="product">
 			<?php 
             include 'dbconnector.php';
-            $queryproduct = "select * from products where ProID=".$_GET['proId'];
+            $queryproduct = "select * from products where ProID=1";
             $result = pg_query($connection,$queryproduct);
             if (pg_num_rows($result) > 0) {
             // output data of each row

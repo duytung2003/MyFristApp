@@ -197,7 +197,7 @@
 						<span class="card-title grey-text"><?= $name_product; ?></span><br>
 					</div>
                     <div class="card-image">
-                        <a href="product.php?id=<?= $id_product; ?>">
+                        <a href="information.php?proId=<?= $id_product; ?>">
                           <img src="<?= $image_product; ?>"></a>
                           <br>
                       </div>
